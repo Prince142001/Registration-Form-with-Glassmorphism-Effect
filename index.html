@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>registration form</header>
+        <form action="#">
+            <div class="input-box user-name">
+                <label for="user-name">name</label>
+                <input type="text" id="user-name" name="user-name" placeholder="Enter your name">
+                <div class="error-msg">Name can't be empty</div>
+            </div>
+            <div class="input-box user-email">
+                <label for="user-email">E-mail</label>
+                <input type="email" id="user-email" name="user-email" placeholder="E-mail">
+                <div class="error-msg">Email must be required</div>
+            </div>
+            <div class="column user-phone-number">
+                <div class="input-box">
+                    <label for="user-phone-number">mobile</label>
+                    <input type="number" id="user-phone-number" name="user-phone-number" placeholder="Phone number">
+                    <div class="error-msg">Phone number required</div>
+                </div>
+                <div class="input-box">
+                    <label for="birthday">birthday</label>
+                    <input type="date" id="birthday" name="birthday">
+                </div>
+            </div>
+            
+            <div class="gender-container">
+                <h3>Gender</h3>
+                <div class="gender-column">
+                    <div class="gender">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">female</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" name="gender" id="other">
+                        <label for="other">Not to prefer</label>
+                    </div>
+                </div>
+                <div class="error-msg">Please select any one option</div>
+            </div>
+            <div class="input-box">
+                <label for="address">Address</label>
+                <textarea name="address" id="textarea" cols="30" rows="3"></textarea>
+            </div>
+
+            <div class="column">
+                <div class="select-box">
+                    <select>
+                        <option hidden>Select College</option>
+                        <option>National Institute of Technology, Tiruchirappalli</option>
+                        <option>National Institute of Technology, Surathkal</option>
+                        <option>National Institute of Technology, Warangal</option>
+                        <option>National Institute of Technology, Kurukshetra</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="select-box">
+                    <select>
+                        <option hidden>Select Department</option>
+                        <option>Multimedia Broadcast Multicast Service</option>
+                        <option>Bachelor of Accounting and Finance</option>
+                        <option>Bachelor of Commerce</option>
+                        <option>Bachelor of Science in Information Technology</option>
+                    </select>
+                </div>
+            </div>
+            <div class="column">
+                <div class="select-box">
+                    <select>
+                        <option hidden>Select Courses</option>
+                        <option>Physical Education Course.</option>
+                        <option>Business/Business Management.</option>
+                        <option>Speech or Communication Skills Classes.</option>
+                        <option>Political Science Class.</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="column">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
